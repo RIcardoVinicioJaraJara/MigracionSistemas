@@ -327,23 +327,7 @@ public class Principal extends javax.swing.JFrame {
                     System.out.println("Error al leer la columna Empleado");
                 }
 
-                if (!lista.isEmpty()) {
-
-                    res.setText(res.getText() + " \n \n                 RESULTADOS SOBRANTES DE SUELDOS \n                      DATOS");
-                    for (String[] strings : lista) {
-                        if (strings[0] == "!@#$%^&*") {
-                            res.setText(res.getText() + "\n                          | " + strings[1] + " | ");
-                            res.setText(res.getText() + "\n                              * la cedula vacia");
-                        } else if (strings[1] == "!@#$%^&*") {
-                            res.setText(res.getText() + "\n                          | " + strings[0] + " | ");
-                            res.setText(res.getText() + "\n                              * El sueldo vaci0");
-                        } else {
-                            res.setText(res.getText() + "\n                          |" + strings[0] + " | " + strings[1] + "|");
-                            res.setText(res.getText() + "\n                              * La cedula no existe");
-                        }
-                    }
-
-                }
+                
 
             }
         } catch (Exception ex) {
